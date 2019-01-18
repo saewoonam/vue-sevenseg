@@ -1,11 +1,26 @@
 {
-  "name": "test-npm",
-  "version": "0.1.0",
-  "private": true,
+  "name": "v-sevenseg",
+  "version": "1.0.0",
+  "description": "A vue implementation of a sevensegment display inspired by Sevenseg.js from https://github.com/BrandonLWhite/sevenSeg.js",
+  "author": "Sae Woo  Nam",
+  "license": "MIT",
+  "repository":"https://github.com/saewoonam/vue-sevenseg.git",
+  "main": "dist/v-sevenseg.js",
+  "unpkg": "dist/v-sevenseg.min.js",
+  "browser": {
+      "./sfc": "src/components/VSevenseg.vue"
+    },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target wc --name v-sevenseg ./src/components/VSevenseg.vue",
     "lint": "vue-cli-service lint"
+  },
+  "files": {
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js",
+    "*.html"
   },
   "dependencies": {
     "vue": "^2.5.21"
