@@ -4,7 +4,28 @@
   "description": "A vue implementation of a sevensegment display inspired by Sevenseg.js from https://github.com/BrandonLWhite/sevenSeg.js",
   "author": "Sae Woo  Nam",
   "license": "MIT",
-  "repository":"https://github.com/saewoonam/vue-sevenseg.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saewoonam/vue-sevenseg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saewoonam/vue-sevenseg.git"
+  },
+  "homepage": "https://github.com/saewoonam/vue-sevenseg"
+  "keywords": [
+    "vue",
+    "vue-component",
+    "vue component",
+    "seven",
+    "segment",
+    "7segment",
+    "7-segment",
+    "7 segment",
+    "sevensegment",
+    "seven-segment",
+    "seven segment",
+    "component"
+  ],
   "main": "dist/v-sevenseg.js",
   "unpkg": "dist/v-sevenseg.min.js",
   "browser": {
