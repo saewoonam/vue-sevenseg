@@ -15,7 +15,7 @@ yarn build
 ### Based on code and instructions from
 
 [Sevenseg.js](https://github.com/BrandonLWhite/sevenSeg.js).
-[https://github.com/z0h4n/vue-seven-segment-display]
+<https://github.com/z0h4n/vue-seven-segment-display>
 
 ### Usage
 
