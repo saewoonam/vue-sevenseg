@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<title>v-sevenseg demo</title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/vue"></script>
+    <!--Load the web component polyfill-->
+    <script>
+      var  index = navigator.userAgent.toLowerCase().indexOf('firefox');
+      if (index > 0) {
+        console.log('firefox');
+        var script = document.createElement("script");
+        script.src = "https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js";
+        script.type = "text/javascript";
+        script = document.createElement("script");
+        document.head.appendChild(script);
+        script.src =  "https://unpkg.com/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-ce-index.js"
+        script.type = "text/javascript";
+        document.head.appendChild(script);
+      }
+    </script>
+    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents&#45;loader.js"></script> -->
+    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs/entrypoints/webcomponents&#45;sd&#45;ce&#45;index.js"></script> -->
+    <script src="./dist/v-sevenseg.js"></script>
+  </head>
+  <body>
+    <v-sevenseg value=1.234567></v-sevenseg>
+    <br />
+    Use string value and slant
+    <v-sevenseg value=".34" slant=10></v-sevenseg>
+    <br />
+    change width<v-sevenseg width=500 digits=7 value=".34" slant=10></v-sevenseg>
+    <br />
+    Change height <v-sevenseg height=80 digits=7 value=".34" slant=10></v-sevenseg>
+    <br />
+    change colors  <v-sevenseg color-on="green" color-off="rgb(0, 25, 0)" height=80 digits=7 value=".34" slant=10></v-sevenseg>
+    <br />
+    change background color  <v-sevenseg color-back="red" color-on="green" color-off="rgb(255, 50, 0)" height=80 digits=7 value=".34" slant=10></v-sevenseg>
+    <br />
+    change background color  <v-sevenseg color-back="transparent" color-on="green" color-off="rgb(255, 240, 255)" height=80 digits=7 value=".34" slant=10></v-sevenseg>
+    <br />
+    resize  <v-sevenseg color-back="transparent" color-on="green" color-off="rgb(255, 240, 255)" resize=true height=80 digits=7 value=".34" slant=10></v-sevenseg>
+  </body>
+</html>
