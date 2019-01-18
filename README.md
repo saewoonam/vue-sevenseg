@@ -12,11 +12,6 @@ npm install --save vue-seven-segment-display
 yarn build
 ```
 
-### Based on code and instructions from
-
-[Sevenseg.js](https://github.com/BrandonLWhite/sevenSeg.js).
-<https://github.com/z0h4n/vue-seven-segment-display>
-
 ### Usage
 
 Sample.vue
@@ -56,3 +51,14 @@ Sample.vue
 `slant`
 - Number. Default is 0
 - Degrees slant of the digits in the display
+
+### Caveat
+
+This is my first vue project.  Any suggestions to improve the code is welcome.
+
+### Based on code and instructions from
+
+- <https://github.com/BrandonLWhite/sevenSeg.js>
+- <https://github.com/z0h4n/vue-seven-segment-display>
+- <https://medium.com/justfrontendthings/how-to-create-and-publish-your-own-vuejs-component-library-on-npm-using-vue-cli-28e60943eed3>
+- <https://vuejsdevelopers.com/2018/05/21/vue-js-web-component/>
