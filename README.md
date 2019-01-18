@@ -14,7 +14,9 @@ yarn build
 
 ### Usage
 
-Sample.vue
+Look in the files ex1.html or ex_ff.html for firefox for examples.
+
+Example:
 
 ```
 <v-sevenseg value=".34" color-back="transparent" color-on="green" color-off="rgb(255, 240, 255)" height=80 digits=7 slant=10></v-sevenseg>
