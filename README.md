@@ -4,7 +4,7 @@
 
 ## Project setup (hope this works)
 ```
-npm install --save vue-seven-segment-display
+npm install --save vue-sevenseg
 ```
 
 ### Compile to web component
