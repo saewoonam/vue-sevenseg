@@ -5,22 +5,8 @@
   <head>
     <script src="https://unpkg.com/vue"></script>
     <!--Load the web component polyfill-->
-    <script>
-      var  index = navigator.userAgent.toLowerCase().indexOf('firefox');
-      if (index > 0) {
-        console.log('firefox');
-        var script = document.createElement("script");
-        script.src = "https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js";
-        script.type = "text/javascript";
-        script = document.createElement("script");
-        document.head.appendChild(script);
-        script.src =  "https://unpkg.com/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-ce-index.js"
-        script.type = "text/javascript";
-        document.head.appendChild(script);
-      }
-    </script>
-    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents&#45;loader.js"></script> -->
-    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs/entrypoints/webcomponents&#45;sd&#45;ce&#45;index.js"></script> -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-ce-index.js"></script>
     <script src="./dist/v-sevenseg.js"></script>
   </head>
   <body>
