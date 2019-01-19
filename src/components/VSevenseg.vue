@@ -12,11 +12,7 @@
         :id="index"
         :key="index"
         :value="color.digit"
-        :style="
-          'display: inline-block; height: 100%; width: ' +
-            100 / colors.length +
-            '%;'
-        "
+        :style="divStyle"
         :class="{ blink: color.blink }"
       >
         <my-digit
@@ -49,15 +45,15 @@ export default {
       default: "0.6789"
     },
     digits: {
-      type: Number,
+      type: [String, Number],
       default: 4
     },
     width: {
-      type: Number,
+      type: [String, Number],
       default: 400
     },
     height: {
-      type: Number,
+      type: [String, Number],
       default: 100
     },
     colorBack: {
@@ -77,11 +73,11 @@ export default {
       default: "rgb(50, 0, 0)"
     },
     slant: {
-      type: Number,
+      type: [String, Number],
       default: 0
     },
     resize: {
-      type: Boolean,
+      type: [String, Boolean],
       default: false
     }
   },
@@ -96,6 +92,14 @@ export default {
     };
   },
   computed: {
+    divStyle: function() {
+      return (
+        "display: inline-block; height: 100%; " +
+        "width: " +
+        100 / this.colors.length +
+        "%;"
+      );
+    },
     colors: function() {
       var colors = this.digitsArray.map(element => {
         return {
@@ -155,7 +159,8 @@ export default {
     */
     totalWidth: function() {
       var w = (((this.height - 16) * 6) / 8) * this.digits;
-      var wMsg = "float: right; width: " + w + ";";
+      var wMsg = "width: " + w + "px; float: right;";
+      // console.log("totalWidth", wMsg);
       return wMsg;
     },
     numericValue: function() {
