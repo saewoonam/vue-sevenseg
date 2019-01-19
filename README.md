@@ -12,6 +12,15 @@ npm install --save vue-sevenseg
 yarn build
 ```
 
+### Compile example vue app that uses the component
+```
+yarn serve
+```
+### Compile bundle (this is not working, from medium article below)
+```
+yarn build-bundle
+```
+
 ### Usage
 
 Look in the files ex1.html or ex_ff.html for firefox for examples.
