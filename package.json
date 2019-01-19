@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/saewoonam/vue-sevenseg.git"
   },
-  "homepage": "https://github.com/saewoonam/vue-sevenseg"
+  "homepage": "https://github.com/saewoonam/vue-sevenseg",
   "keywords": [
     "vue",
     "vue-component",
@@ -29,20 +29,21 @@
   "main": "dist/v-sevenseg.js",
   "unpkg": "dist/v-sevenseg.min.js",
   "browser": {
-      "./sfc": "src/components/VSevenseg.vue"
-    },
+    "./sfc": "src/components/VSevenseg.vue"
+   },
   "scripts": {
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target wc --name v-sevenseg ./src/components/VSevenseg.vue",
     "lint": "vue-cli-service lint"
   },
-  "files": {
+  "files": [
     "dist/*",
     "src/*",
     "public/*",
     "*.json",
     "*.js",
     "*.html"
-  },
+  ],
   "dependencies": {
     "vue": "^2.5.21"
   },
