@@ -41,7 +41,7 @@ export default {
       default: "id-placeholder"
     },
     value: {
-      type: [String, Number],
+      type: [String],
       default: "0.6789"
     },
     digits: {
@@ -125,6 +125,7 @@ export default {
       // var isnum = /^-?\d*\.?\d*$/.test(this.value);
       var str;
       str = this.value.toString();
+      // console.log('str', str, 'value', this.value);
       if (str.startsWith(".")) str = "0" + str;
       if (str.startsWith("-.")) str = str.replace("-", "-0");
       str = str.split("");
