@@ -127,14 +127,6 @@ export default {
       }
       return style;
     },
-    computedValue: function() {
-      var isnum = /^\d+$/.test(this.value);
-      if (isnum) {
-        return parseInt(this.value);
-      } else {
-        return this.value;
-      }
-    },
     dpStyle: function() {
       if (this.dp) {
         return "fill: " + this.colorOn + ";";
