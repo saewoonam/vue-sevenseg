@@ -1,7 +1,7 @@
 {
   "name": "v-sevenseg",
   "version": "1.0.0",
-  "description": "A vue implementation of a sevensegment display inspired by Sevenseg.js from https://github.com/BrandonLWhite/sevenSeg.js",
+  "description": "A vue implementation of a seven segment display inspired by Sevenseg.js from https://github.com/BrandonLWhite/sevenSeg.js",
   "author": "Sae Woo  Nam",
   "license": "MIT",
   "repository": {
