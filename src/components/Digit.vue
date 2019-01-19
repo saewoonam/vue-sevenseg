@@ -1,5 +1,5 @@
 <template>
-  <!-- <div> -->
+  <div>
   <svg
     viewBox="0 0 60 80"
     :style="styleComputed"
@@ -28,7 +28,7 @@
       d="M 0 0 L 0 80"
     />
   </svg>
-  <!-- </div> -->
+  </div>
 </template>
 <script>
 export default {

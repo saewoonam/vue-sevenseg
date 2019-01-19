@@ -34,7 +34,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target wc --name v-sevenseg ./src/components/VSevenseg.vue",
-    "build-bundle": "vue-cli-service build --target lib --name vsevenseg ./src/components/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name v-sevenseg ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "files": [
