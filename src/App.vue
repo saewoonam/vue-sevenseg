@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <v-sevenseg value=1.234567></v-sevenseg>
+    <br />
+    <br />
+    Use string value and slant
+    <v-sevenseg value=".34" slant=10></v-sevenseg>
+    <br />
+    change width<v-sevenseg width=500 digits=7 value=".abcdef" slant=10></v-sevenseg>
+    <br />
+    Change height <v-sevenseg height=80 digits=7 value="-_.34" slant=10></v-sevenseg>
+    <br />
+    change colors  <v-sevenseg color-on="green" color-off="rgb(0, 25, 0)" height=80 digits=7 value=".34" slant=10></v-sevenseg>
+    <br />
+    change background color  <v-sevenseg color-back="red" color-on="green" color-off="rgb(255, 50, 0)" height=80 digits=7 value=".34" slant=10></v-sevenseg>
+    <br />
+    change background color  <v-sevenseg color-back="transparent" color-on="green" color-off="rgb(255, 240, 255)" height=80 digits=7 value=".34" slant=10></v-sevenseg>
+    <br />
+    resize  <v-sevenseg color-back="transparent" color-on="green" color-off="rgb(255, 240, 255)" resize=true height=80 digits=7 value=".34" slant=10></v-sevenseg>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import VSevenseg from "./components/VSevenseg.vue";
+import MyDigit from "./components/Digit.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    VSevenseg,
+    MyDigit
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app { 
+  display: inline-block
 }
 </style>
