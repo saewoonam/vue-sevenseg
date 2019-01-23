@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<title>vsevenseg demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./vsevenseg.umd.js"></script>
+<link rel="stylesheet" href="./vsevenseg.css">
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: vsevenseg
+  }
+}).$mount('#app')
+</script>
