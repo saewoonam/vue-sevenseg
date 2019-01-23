@@ -2,16 +2,14 @@
 
 ## A Seven Segment Display Component for Vue.js based on sevenSeg.js
 
-## Project setup (hope this works)
-```
-npm install --save vue-sevenseg
-```
-
 ### Compile to web component
 ```
 yarn build
 ```
-
+### Compile to Vue library so that it can be used in Vue components and apps
+```
+yarn build-lib
+```
 ### Compile example vue app that uses the component
 ```
 yarn serve
@@ -20,15 +18,20 @@ yarn serve
 ```
 yarn build-bundle
 ```
+## Project setup (I haven't tried this, but it should work)
+```
+npm install --save vue-sevenseg
+```
+
 ### JSFiddle example as web component
-chrome, safari:
-<https://jsfiddle.net/k24o6zfq/1/>
-<https://jsfiddle.net/9qxe240L/>
+chrome, safari:\
+<https://jsfiddle.net/k24o6zfq/1/>\
+<https://jsfiddle.net/9qxe240L/>\
 firefox:
-<https://jsfiddle.net/7pcgsqyz/>
+<https://jsfiddle.net/7pcgsqyz/>\
 ### Usage
 
-Look in the files ex1.html or ex_ff.html for firefox for examples.
+Look in the files ex1.html, ex_unpkg.html for examples... Look at ex_ff.html for firefox for examples.
 
 Example:
 
