@@ -20,7 +20,12 @@ yarn serve
 ```
 yarn build-bundle
 ```
-
+### JSFiddle example as web component
+chrome, safari:
+<https://jsfiddle.net/k24o6zfq/1/>
+<https://jsfiddle.net/9qxe240L/>
+firefox:
+<https://jsfiddle.net/7pcgsqyz/>
 ### Usage
 
 Look in the files ex1.html or ex_ff.html for firefox for examples.
