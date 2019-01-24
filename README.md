@@ -14,10 +14,6 @@ yarn build-lib
 ```
 yarn serve
 ```
-### Compile bundle (this is not working, from medium article below)
-```
-yarn build-bundle
-```
 ## Project setup (I haven't tried this, but it should work)
 ```
 npm install --save vue-sevenseg
