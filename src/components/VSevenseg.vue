@@ -205,6 +205,12 @@ export default {
 };
 </script>
 <style scoped>
+.off {
+  stroke-opacity: 0;
+}
+.on {
+  stroke-opacity: 1;
+}
 .partial {
   fill-opacity: 0.2;
 }
